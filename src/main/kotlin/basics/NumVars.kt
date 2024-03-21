@@ -43,4 +43,15 @@ fun main() {
 
     val iAmFloating = 43.99F
     println(iAmFloating::class.java)
+
+    val cats = 3
+    val largerCat = cats.toLong()
+    println(cats::class.java)
+    println(largerCat::class.java)
+    val people = 7500000000
+    println(people::class.java)
+    println(people.toInt())
+    println(cats)
+    println(cats.toByte())
+    println(cats.toFloat())
 }
