@@ -54,4 +54,7 @@ fun main() {
     println(cats)
     println(cats.toByte())
     println(cats.toFloat())
+    println(cats.toString())
+    println(cats.toFloat().toString())
+    println(cats.toFloat().toString()::class.java)
 }
