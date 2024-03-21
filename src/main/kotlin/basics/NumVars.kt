@@ -24,4 +24,23 @@ fun main() {
     val total = apples * applePrice
     println("So you would pay $total € Fun fact: stored as ${total::class.java} in our system")
     println("Btw, the price by apple is $applePrice € Fun fact: stored as ${applePrice::class.java} in our system")
+
+    val dogs: Byte = 5
+    println(dogs::class.java)
+
+    val days: Short = 5
+    println(days::class.java)
+
+    //Kotlin says the type is determined explicitly for Int when a numeric value without decimals
+    val meals: Int = 5
+    println(meals::class.java)
+
+    val life: Long = 42
+    println(life::class.java)
+
+    val newLife = 43L
+    println(newLife::class.java)
+
+    val iAmFloating = 43.99F
+    println(iAmFloating::class.java)
 }
