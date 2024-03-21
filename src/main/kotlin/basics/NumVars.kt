@@ -57,4 +57,11 @@ fun main() {
     println(cats.toString())
     println(cats.toFloat().toString())
     println(cats.toFloat().toString()::class.java)
+    println(iAmFloating)
+    println(iAmFloating.toInt())
+
+    print("Hey there! Could you please introduce a double? ->")
+    val doubleInput: Double = readln().toDouble()
+    val inputTimesPi = doubleInput * Math.PI
+    println("Gonna multiply $doubleInput by pi (meaning ${Math.PI}), resulting in $inputTimesPi of type ${inputTimesPi::class.java}")
 }
