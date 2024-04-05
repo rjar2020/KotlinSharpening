@@ -23,4 +23,21 @@ fun main() {
     println("6-- = $incrementAction")
     incrementAction = ++incrementAction
     println("++5 = $incrementAction")
+
+    val theShort: Short = 32767
+    val theInt: Int = 2147483
+    val result = theShort + theInt
+    println("theShort + theInt = $result")
+    println("Result is of type ${result::class.java}")
+
+    val theLong: Long = 9223372036854775807
+    val theFloat: Float = 3.4028235E38f
+    val anotherResult = theLong + theFloat
+    println("theLong + theFloat = $anotherResult")
+    println("Another result is of type ${anotherResult::class.java}")
+
+    val theDouble: Double = 1.7976931348623157E308
+    val oneMoreResult = theFloat + theDouble
+    println("theFloat + theDouble = $oneMoreResult")
+    println("One more result is of type ${oneMoreResult::class.java}")
 }
