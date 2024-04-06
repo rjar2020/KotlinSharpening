@@ -55,4 +55,28 @@ fun main() {
     println("bikes /= 2 = $bikes")
     bikes %= 2
     println("bikes %= 2 = $bikes")
+
+    println("Let's calculate you net worth in 5 years in terms of cash")
+    print("Enter how much do you have in the bank today: ")
+    val initialCash = readln().toDouble()
+    println("Let's assume you have a 5.5% yearly interest rate")
+
+    var functionalCash = initialCash
+    val netWorthCashPerYear = (1..5).fold(listOf<Pair<Int, Double>>()) { acc, year ->
+        val newCash = functionalCash * 0.055
+        functionalCash += newCash
+        acc + (year to functionalCash)
+    }
+
+    netWorthCashPerYear.forEach { (year, cash) ->
+        println("In year $year you will have ${doubleDigitDecimal(cash)}")
+    }
+
+    var smartyCash = initialCash
+    for (year in 1..5) {
+        smartyCash *= 1.055
+        println("In year $year you will have ${doubleDigitDecimal(smartyCash)}")
+    }
 }
+
+private fun doubleDigitDecimal(cash: Double) = String.format("%.2f", cash)
