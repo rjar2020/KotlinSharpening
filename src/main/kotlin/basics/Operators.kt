@@ -40,4 +40,19 @@ fun main() {
     val oneMoreResult = theFloat + theDouble
     println("theFloat + theDouble = $oneMoreResult")
     println("One more result is of type ${oneMoreResult::class.java}")
+
+    var bikes = 5
+    println("bikes = $bikes")
+    bikes + 1
+    println("bikes + 1 = $bikes")
+    bikes += 1
+    println("bikes += 1 = $bikes")
+    bikes -= 1
+    println("bikes -= 1 = $bikes")
+    bikes *= 2
+    println("bikes *= 2 = $bikes")
+    bikes /= 2
+    println("bikes /= 2 = $bikes")
+    bikes %= 2
+    println("bikes %= 2 = $bikes")
 }
