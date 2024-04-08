@@ -39,4 +39,17 @@ fun main() {
 
     val booleanResult = a > b
     println("a > b = $booleanResult")
+
+    val expressionOne = 5.374 * 9.5847
+    val expressionTwo = 3.237 * 15.3726
+    println("is $expressionOne > $expressionTwo? ${expressionOne > expressionTwo}")
+    val expressionThree = ((true && false) || (true || false))
+    println("is ((true && false) || (true || false)) true? $expressionThree")
+    val expressionFour = !((3 >= 3) && (false || (2 < 5)))
+    println("is !((3 >= 3) && (false || (2 < 5))) true? $expressionFour")
+    val toys = 2
+    val brokenToys = 1
+    val notBrokenToys = toys - brokenToys
+    val canGetNewToy = toys < 5 && notBrokenToys >= 1
+    println("Can I get a new toy? $canGetNewToy")
 }
