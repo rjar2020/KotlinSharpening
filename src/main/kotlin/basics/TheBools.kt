@@ -20,4 +20,23 @@ fun main() {
     println("isNight = $isNight")
     println("isDay && isNight = ${isDay && isNight}")
     println("!isDay = ${!isDay}")
+
+    val a = 3
+    val b = 2
+    println("a = $a")
+    println("b = $b")
+    println("a > b = ${a > b}")
+    println("a < b = ${a < b}")
+    println("a < a = ${a < a}")
+    println("a > a = ${a > a}")
+    println("a >= a = ${a >= a}")
+    println("a <= a = ${a <= a}")
+    println("a >= b = ${a >= b}")
+    println("a <= b = ${a <= b}")
+    println("a == b = ${a == b}")
+    println("a != b = ${a != b}")
+    println("3 > 2 = ${3 > 2}")
+
+    val booleanResult = a > b
+    println("a > b = $booleanResult")
 }
