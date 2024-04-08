@@ -52,4 +52,11 @@ fun main() {
     val notBrokenToys = toys - brokenToys
     val canGetNewToy = toys < 5 && notBrokenToys >= 1
     println("Can I get a new toy? $canGetNewToy")
+
+    val cows = 3
+    val animalsByProducts = 1
+    val children = 2
+    val family = children + 1
+    val canGetFunding = (cows <= 5 && animalsByProducts > 0) || family >= 3
+    println("Can I get funding? $canGetFunding")
 }
