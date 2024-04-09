@@ -72,4 +72,10 @@ fun main() {
     //println(otherCatName!!.length)
     otherCatName = "Milton"
     println(otherCatName!!.length)
+
+    val productPrice = 29.99
+    println("How many products do you want to buy? -> ")
+
+    val productAmount = readlnOrNull()?.toIntOrNull() ?: 1
+    println("The total price is ${productAmount * productPrice}")
 }
