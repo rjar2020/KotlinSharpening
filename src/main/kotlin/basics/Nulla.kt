@@ -37,7 +37,7 @@ fun main() {
     var a: String? = "I like dogs"
     //It doesn't compile
     //println(a.substring("3,6"))
-    println(a?.substring(3,6))
+    println(a?.substring(3, 6))
 
     var b: Double? = 3.14
     //It doesn't compile
@@ -58,4 +58,12 @@ fun main() {
     age = age?.toDouble()?.times(7).toString()
     println("Your age in dog years is $age")
     println("Your age length is ${age?.length}")
+
+    var otherCatName: String? = null
+    println(otherCatName)
+    println(otherCatName ?: "No cat name")
+    println(otherCatName ?: "Milton".length)
+    otherCatName = "Milton"
+    println(otherCatName ?: "No cat name")
+    println(otherCatName.length)
 }
