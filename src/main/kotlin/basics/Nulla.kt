@@ -15,4 +15,11 @@ fun main() {
     var dogName: String = "Lindo"
     //It doesn't compile
     //dogName = null
+
+    println("dogName lenght is ${dogName.length}")
+    //It doesn't compile
+    //println("catName lenght is ${catName.length}")
+    println("catName lenght is ${catName?.length?.toString()}")
+    catName = "Mittens"
+    println("catName lenght is ${catName?.length?.toString()}")
 }
