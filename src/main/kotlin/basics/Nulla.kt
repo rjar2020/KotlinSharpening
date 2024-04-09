@@ -66,4 +66,10 @@ fun main() {
     otherCatName = "Milton"
     println(otherCatName ?: "No cat name")
     println(otherCatName.length)
+
+    otherCatName = null
+    //It doesn't compile anymore, woooohoooo
+    //println(otherCatName!!.length)
+    otherCatName = "Milton"
+    println(otherCatName!!.length)
 }
