@@ -1,8 +1,5 @@
 package basics
 
-import java.io.PrintWriter
-import java.io.StringWriter
-
 fun main() {
     println("Let's calculate you net worth in 5 years in terms of cash")
     print("Enter how much do you have in the bank today: ")
@@ -18,4 +15,6 @@ fun main() {
         println("Thank you for using the net worth calculator")
         println("All the computational resources involved should be released here and the program should exit gracefully")
     }
+    //Just for fun
+    throw IllegalStateException("You know what? I'm done with this program. I'm out!")
 }
