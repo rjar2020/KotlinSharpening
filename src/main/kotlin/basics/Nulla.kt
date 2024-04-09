@@ -57,5 +57,5 @@ fun main() {
     //age = age.toDouble()
     age = age?.toDouble()?.times(7).toString()
     println("Your age in dog years is $age")
-    println("Your age lenght is ${age?.length}")
+    println("Your age length is ${age?.length}")
 }
