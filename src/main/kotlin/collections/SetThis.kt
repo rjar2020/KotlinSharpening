@@ -38,4 +38,10 @@ fun main() {
     println("Numbers contains sub set (3,5): ${numbers.containsAll(setOf(3, 5))}")
     println("Numbers is empty? ${numbers.isEmpty()}")
     println("Empty numbers is empty? ${emptyNumbers.isEmpty()}")
+    println("Intersection between numbers and mutableNumbers: ${numbers.intersect(mutableNumbers)}")
+    println("Union between numbers and mutableNumbers: ${numbers.union(mutableNumbers)}")
+    println("Difference between numbers and mutableNumbers: ${numbers.subtract(mutableNumbers)}")
+    println("Clearing mutableNumbers")
+    mutableNumbers.clear()
+    println("Mutable numbers after clearing: $mutableNumbers")
 }
