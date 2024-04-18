@@ -25,4 +25,10 @@ fun main() {
     println("Mutable numbers after removing all the new mutable numbers: $mutableNumbers")
     mutableNumbers.remove(666)
     println("Mutable numbers after removing 666 (nothing changes): $mutableNumbers")
+    val customers = hashSetOf("Jose", "Pepe", "Paco")
+    println("Customers: $customers")
+    customers.add("Paco")
+    println("Customers after Paco arrived to the store : $customers")
+    customers.remove("Pepe")
+    println("Customers after Pepe left the store : $customers")
 }
