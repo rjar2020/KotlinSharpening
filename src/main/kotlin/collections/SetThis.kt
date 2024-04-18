@@ -31,4 +31,11 @@ fun main() {
     println("Customers after Paco arrived to the store : $customers")
     customers.remove("Pepe")
     println("Customers after Pepe left the store : $customers")
+    println("Numbers set size: ${numbers.size}")
+    println("Numbers contains 3? ${numbers.contains(3)}")
+    println("Numbers contains 69? ${numbers.contains(69)}")
+    println("Numbers contains inmutableNumbers? ${numbers.containsAll(mutableNumbers)}")
+    println("Numbers contains sub set (3,5): ${numbers.containsAll(setOf(3, 5))}")
+    println("Numbers is empty? ${numbers.isEmpty()}")
+    println("Empty numbers is empty? ${emptyNumbers.isEmpty()}")
 }
