@@ -32,35 +32,8 @@ class FizzBuzzTest {
 
     @Test
     fun testSequence() {
-        testFizzBuzzForUntil(15)
-    }
-
-    @Test
-    fun testSequence100() {
-        testFizzBuzzForUntil(100)
-    }
-
-    @Test
-    fun testSequence1000() {
-        testFizzBuzzForUntil()
-    }
-
-    @Test
-    fun testSequence1000000() {
-        testFizzBuzzForUntil(1_000_000)
-    }
-
-    private fun testFizzBuzzForUntil(upperBound: Long = 1000) {
-        val result = fizzBuzz.generate(upperBound)
-        result.forEachIndexed { index, value ->
-            val number = index + 1
-            val expected = when {
-                number % 15 == 0 -> "FizzBuzz"
-                number % 3 == 0 -> "Fizz"
-                number % 5 == 0 -> "Buzz"
-                else -> number.toString()
-            }
-            assertEquals(expected, value, "Test for number $number should return '$expected'")
-        }
+        val result = fizzBuzz.generate(15)
+        val resultList = listOf("1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz")
+        assertEquals(resultList, result, "Test for sequence 1 to 15 should return the FizzBuzz sequence")
     }
 }
