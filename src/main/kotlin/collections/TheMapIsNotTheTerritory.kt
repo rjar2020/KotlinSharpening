@@ -35,4 +35,12 @@ fun main() {
     println("Hash count contains value \"FIVE\"? ${hashCount.containsValue("FIVE")}")
     println("Hash count contains value \"Six\"? ${hashCount.containsValue("Six")}")
     println("Hash count contains key 6? ${hashCount.containsKey(6)}")
+
+    val attendance = hashMapOf("Sept 23rd" to 2837, "Sept 24th" to 2938, "Oct 25th" to 4985, "Oct 26th" to 5002)
+    println("Attendance to the Amusement Park: $attendance")
+    println("Including attendance on Sept 26th")
+    attendance["Sept 26th"] = 5001
+    println("Attendance to the Amusement Park after adding Sept 26th: $attendance")
+    println("How many people visited the park on Sept 23rd and 24th? ${attendance["Sept 23rd"]?.plus(attendance["Sept 24th"] ?: 0)}")
+    println("Is data for Sept 22nd available? ${attendance.containsKey("Sept 22nd")}")
 }
