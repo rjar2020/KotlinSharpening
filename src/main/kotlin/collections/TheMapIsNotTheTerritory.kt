@@ -27,4 +27,12 @@ fun main() {
     println("Hash count after replacing 5 with FIVE: $hashCount")
     hashCountMore.clear()
     println("Hash count more after clearing: $hashCountMore")
+    println("Is hash count empty? ${hashCount.isEmpty()}")
+    println("Is hash count more empty? ${hashCountMore.isEmpty()}")
+    println("Is hash count not empty? ${hashCount.isNotEmpty()}")
+    println("Hash count size: ${hashCount.size}")
+    println("Hash count contains key 3? ${hashCount.containsKey(3)}")
+    println("Hash count contains value \"FIVE\"? ${hashCount.containsValue("FIVE")}")
+    println("Hash count contains value \"Six\"? ${hashCount.containsValue("Six")}")
+    println("Hash count contains key 6? ${hashCount.containsKey(6)}")
 }
