@@ -30,6 +30,11 @@ class FizzBuzzTest {
         assertEquals("FizzBuzz", result[14], "Test for number 15 should return 'FizzBuzz'")
     }
 
+    fun testFizzBuzzPlus() {
+        val result = fizzBuzz.generate(50)
+        assertEquals("FizzBuzz", result[44], "Test for number 15 should return 'FizzBuzz'")
+    }
+
     @Test
     fun testSequence() {
         val result = fizzBuzz.generate(15)
