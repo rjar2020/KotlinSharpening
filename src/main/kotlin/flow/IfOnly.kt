@@ -43,4 +43,35 @@ fun main() {
     } else {
         println("You can't have a cat!")
     }
+
+    var doYouHaveTheKeys = true
+    println("Do you have the keys? -> $doYouHaveTheKeys")
+    if (doYouHaveTheKeys) {
+        println("You can start the car!")
+    } else {
+        println("You can't start the car!")
+    }
+
+    val doYouHaveTheKeysString = "No"
+    println("Do you have the keys? -> $doYouHaveTheKeysString")
+    println("Passing a No to a boolean will return -> ${doYouHaveTheKeysString.toBoolean()}")
+    doYouHaveTheKeys = doYouHaveTheKeysString.toBoolean()
+    println("Do you have the keys? -> $doYouHaveTheKeys")
+    if (doYouHaveTheKeys) {
+        println("You can start the car!")
+    } else {
+        println("You can't start the car!")
+    }
+
+    val currentHour24hr = 12
+    println("Current hour is $currentHour24hr")
+    if (currentHour24hr < 12) {
+        println("It's $currentHour24hr am!")
+    } else {
+        if (currentHour24hr == 12) {
+            println("It's $currentHour24hr pm!")
+        } else {
+            println("It's ${currentHour24hr - 12} pm!")
+        }
+    }
 }
