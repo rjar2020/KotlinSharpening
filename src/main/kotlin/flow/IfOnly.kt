@@ -29,4 +29,18 @@ fun main() {
     } else {
         println("You don't have enough money!")
     }
+
+    val petStore = listOf("cat", "dog", "fish")
+    val hasCatFood = true
+
+    if (petStore.contains("cat")) {
+        println("Do you have cat Food? -> $hasCatFood")
+        if(hasCatFood) {
+            println("You can have a cat! Now feed them please!")
+        } else {
+            println("You can't have a cat! Need food first")
+        }
+    } else {
+        println("You can't have a cat!")
+    }
 }
