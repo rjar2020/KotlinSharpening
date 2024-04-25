@@ -35,7 +35,7 @@ fun main() {
 
     if (petStore.contains("cat")) {
         println("Do you have cat Food? -> $hasCatFood")
-        if(hasCatFood) {
+        if (hasCatFood) {
             println("You can have a cat! Now feed them please!")
         } else {
             println("You can't have a cat! Need food first")
@@ -74,4 +74,20 @@ fun main() {
             println("It's ${currentHour24hr - 12} pm!")
         }
     }
+
+    val hasEggs = true
+    val hasBacon = false
+    val eggsExpenditure: Int
+    var baconExpenditure = 0
+    if (hasEggs) {
+        eggsExpenditure = 5 * 12
+        if (hasBacon) {
+            baconExpenditure = 20 * 2
+        }
+        println("You spent $eggsExpenditure on eggs and $baconExpenditure on bacon!")
+        println("And the total is ${eggsExpenditure + baconExpenditure}")
+    } else {
+        println("You can't make breakfast!")
+    }
+
 }
