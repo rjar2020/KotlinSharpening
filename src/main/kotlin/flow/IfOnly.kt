@@ -1,7 +1,6 @@
 package flow
 
-fun main() {
-    /*println("Would you like something sweet or salty?")
+fun main() {/*println("Would you like something sweet or salty?")
     val answer = readlnOrNull()
     if (answer == "sweet") {
         println("Here is a chocolate bar for you!")
@@ -90,4 +89,7 @@ fun main() {
         println("You can't make breakfast!")
     }
 
+    val theEvenNumber = 24
+    val isEven = if (theEvenNumber % 2 == 0) "Number is even" else "Number is odd"
+    println("Number $theEvenNumber is $isEven")
 }
