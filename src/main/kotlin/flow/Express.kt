@@ -30,4 +30,25 @@ fun main() {
     if(otherFavouritePet !in availablePet) {
         println("Apologies $otherFavouritePet is not available.")
     }
+
+    val animals = arrayListOf<String>()
+    if(animals.isEmpty()) {
+        println("No animals available.")
+    } else {
+        println("Animals available.")
+    }
+
+    animals.add("cat")
+    println("Here comes a cat")
+    if(animals.isNotEmpty()) {
+        println("Animals available.")
+    } else {
+        println("No animals available.")
+    }
+
+    if(animals.add("dog")) {
+        println("Dog added.")
+    } else {
+        println("Dog not added.")
+    }
 }
