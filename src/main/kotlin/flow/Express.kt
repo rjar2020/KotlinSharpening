@@ -17,4 +17,17 @@ fun main() {
 
     val age = 13
     if (age > 18) println("You can drink alcohol") else println("You are a minor!")
+
+    val favouritePet = "dog"
+    val availablePet = listOf("cat", "dog", "fish")
+    if(favouritePet in availablePet) {
+        println("You can have a $favouritePet!")
+    } else {
+        println("Apologies $favouritePet is not available.")
+    }
+
+    val otherFavouritePet = "bird"
+    if(otherFavouritePet !in availablePet) {
+        println("Apologies $otherFavouritePet is not available.")
+    }
 }
