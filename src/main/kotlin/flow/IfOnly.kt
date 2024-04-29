@@ -106,4 +106,22 @@ fun main() {
         "Not a pet"
     }
     println("The animal $theAnimal says $action")
+
+    val yourGrading = 99
+    val grade = if (yourGrading > 100 || yourGrading < 0) {
+        "invalid!"
+    } else if (yourGrading >= 90) {
+        "A"
+    } else if (yourGrading >= 80) {
+        "B"
+    } else if (yourGrading >= 70) {
+        "C"
+    } else if (yourGrading >= 60) {
+        "D"
+    } else if (yourGrading >= 50) {
+        "E"
+    } else {
+        "F"
+    }
+    println("Your grade $yourGrading is $grade")
 }
