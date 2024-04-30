@@ -73,9 +73,7 @@ fun main() {
     println("You have $amountReview!")
 
     var yourAge = 38
-
     if (yourAge < 1) yourAge = 1
-
     val ageReview = if (yourAge in 1..13) {
         "a child"
     } else if (yourAge in 14..18) {
@@ -83,6 +81,5 @@ fun main() {
     } else  {
         "an adult"
     }
-
     println("You are $ageReview.")
 }
