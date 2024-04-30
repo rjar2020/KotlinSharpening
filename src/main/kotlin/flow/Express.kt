@@ -51,4 +51,24 @@ fun main() {
     } else {
         println("Dog not added.")
     }
+
+    val guestList = listOf("Alice", "Bob", "Charlie")
+    val guest = "Alice"
+    if(guest in guestList) {
+        println("Welcome $guest!")
+    } else {
+        println("Apologies $guest, you are not on the guest list.")
+    }
+
+    val howManyCatsDoYouHave = 2
+    val amountReview = if(howManyCatsDoYouHave in 1..3) {
+        "few cats"
+    } else if (howManyCatsDoYouHave in 4..6) {
+        "several cats"
+    } else if (howManyCatsDoYouHave == 0) {
+        "no cats"
+    } else {
+        "many cats"
+    }
+    println("You have $amountReview!")
 }
