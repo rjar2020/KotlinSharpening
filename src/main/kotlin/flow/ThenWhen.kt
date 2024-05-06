@@ -23,4 +23,10 @@ fun main() {
         in 6..10 -> println("A name like $name with $length characters is a medium one")
         else -> println("A name like $name with $length characters is a long one")
     }
+
+    when(val theFirstLetter = name[0]) {
+        in 'A'..'C' -> println("$name with $theFirstLetter from the top 3")
+        in 'D'..'F' -> println("$name with $theFirstLetter from the top 6")
+        else -> println("$name with $theFirstLetter from the happiest +20!")
+    }
 }
